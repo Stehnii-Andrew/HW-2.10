@@ -1,0 +1,109 @@
+@font-face {
+    src: url(/fonts/YouTubeSansDark-Medium.ttf);
+    font-family: "YouTubeSansDark-Medium";
+}
+
+body {
+    padding: 30px;
+}
+
+span {
+    color: rgb(163,163,163);
+}
+
+.container {
+    margin: 0px auto;
+    color: #fff;
+    display: grid;
+    width: 700px;
+    grid-template-rows: 1/9 4/9 4/9;
+    grid-template-areas: 
+        "header"
+        "black"
+        "table"
+        ;
+    font-family: "YouTubeSansDark-Medium";
+    font-weight: 900;
+    
+}
+
+.header {
+    background-color: rgb(33,33,33);
+    grid-area: header;
+    padding: 20px;
+    color: #fff;
+    font-size: 22px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.black {
+    background-color: #000;
+    padding: 220px 20px 20px;
+    box-sizing: border-box;
+}
+
+.table {
+    background-color: rgb(33,33,33);
+    grid-area: table;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.element {
+    padding: 30px;
+}
+
+.dismiss {
+    padding: 50px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+}
+
+.dismiss-1 {
+    height: 50px;
+    width: 120px;
+    background-color: rgb(33,33,33);
+    border: none;
+    font-family: "YouTubeSansDark-Medium";
+    font-size: 22px;
+    border-radius: 7px;
+    color: rgb(117,117,117);
+    font-weight: 900;
+}
+
+.dismiss-1:hover {
+    background-color: rgba(163,163,163, 50%);
+    color: rgb(255,255,255);
+    transition: 0.5s;
+}
+
+.edit {
+    padding: 50px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+}
+
+.edit-1 {
+    height: 50px;
+    width: 220px;
+    background-color: rgb(62,166,255);
+    border: none;
+    font-family: "YouTubeSansDark-Medium";
+    font-size: 22px;
+    border-radius: 7px;
+    color: rgb(19,32,42);
+    font-weight: 900;
+}
+
+.edit-1:hover {
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
